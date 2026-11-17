@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #0B1020;
+  --surface: #151C2F;
+  --primary: #6366F1;
+  --secondary: #06B6D4;
+  --text: #F8FAFC;
+}
+
+body {
+  color: var(--text);
+  background: var(--background);
+  font-feature-settings: "rlig" 1, "calt" 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom Scrollbar for Sleek SaaS look */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0B1020;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1E2742;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2D3958;
+}
+
+/* Focus outline helpers */
+*:focus-visible {
+  outline: 2px solid #6366F1;
+  outline-offset: 1px;
+}
